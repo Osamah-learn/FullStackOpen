@@ -1,0 +1,19 @@
+browser->server: HTTP post https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: User type new note like Osamah Amer Mohammed  and -request new https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: Server Response json file /notes including hello
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+
+
+note over browser:
+browser starts executing spa js-code
+that requests JSON data from server 
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: [{ content: "Osamah Amer Mohammed", date: "2019-05-23" }, ...]
+
+note over browser:
+browser executes the event handler and  add one element to the dom by virtual dom
+that renders notes to display with out rerender all Dom
+end note
