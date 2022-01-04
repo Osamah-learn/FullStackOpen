@@ -1,1 +1,20 @@
 
+browser->server: HTTP post https://studies.cs.helsinki.fi/exampleapp/new_note
+server-->browser: User type new note like Helo  and -request new note 
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+server-->browser: Server Response json file /notes including hello
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+
+
+note over browser:
+browser starts executing js-code
+that requests JSON data from server 
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes.json
+server-->browser: [{ content: "Hello", date: "2019-05-23" }, ...]
+
+note over browser:
+browser executes the event handler
+that renders notes to display
+end note
