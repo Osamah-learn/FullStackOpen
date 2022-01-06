@@ -1,3 +1,5 @@
+#1.2 and 1.3 are founded here
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
