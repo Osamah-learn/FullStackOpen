@@ -1,0 +1,30 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "This BackEnd Bulid By Osamah Amer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Osamah-learn/FullStackOpen.git"
+  },
+  "author": "Osamah Amer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Osamah-learn/FullStackOpen/issues"
+  },
+  "homepage": "https://github.com/Osamah-learn/FullStackOpen#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "joi": "^13.7.0",
+    "morgan": "^1.10.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
