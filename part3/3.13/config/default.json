@@ -1,0 +1,10 @@
+{
+    
+    "env": {
+      "dbConfig": {
+        "host": "localhost",
+        "port": 5984,
+        "dbName": "mongodb+srv://fullstack:00100010@cluster0.bulm2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+      }
+    }
+  }
